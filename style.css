@@ -1,0 +1,38 @@
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */html.has-scroll-smooth{overflow:hidden}html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.has-scroll-smooth body{overflow:hidden}.has-scroll-smooth [data-scroll-container]{min-height:100vh}.c-scrollbar{position:absolute;right:0;top:0;width:11px;height:100vh;transform-origin:center right;transition:transform .3s,opacity .3s;opacity:0}.c-scrollbar:hover{transform:scaleX(1.45)}.c-scrollbar:hover,.has-scroll-dragging .c-scrollbar,.has-scroll-scrolling .c-scrollbar{opacity:1}.c-scrollbar_thumb{position:absolute;top:0;right:0;background-color:#000;opacity:.5;width:7px;border-radius:10px;margin:2px;cursor:-webkit-grab;cursor:grab}.has-scroll-dragging .c-scrollbar_thumb{cursor:-webkit-grabbing;cursor:grabbing}
+
+:root {
+    --orange:#222;
+
+}
+body {background-color: #eee; font: normal 18px "Gilroy"; color: #222; margin: 0; padding: 0;}
+
+header {position: sticky;top:0; padding: 20px 100px;text-align: center;z-index: 3;}
+header ul{ display: flex;align-items: center; justify-content: center;padding: 0; margin: 0; width: 100%;}
+header a {color: #aaa; text-transform: uppercase; font-size: 12px; font-weight: bolder; text-decoration: none; transition: all .5s;}
+header a:hover {color: #222;}
+header a.active {color:var(--orange)}
+header ul li {list-style: none;padding: 10px 25px;}
+
+section {min-height: 50vh; padding: 100px;}
+h1 {font-size: 200px;line-height: .75em;margin: .5em 0 0; color:var(--orange)}
+h1.no1.animate {}
+.flex {display:flex; align-content: center; justify-content: center;}
+.flex div {align-items: center;padding:0 50px;}
+
+.center {text-align: center;}
+img {width: 100%;}
+img.iphone {width: 350px; height: auto; 
+    /* transition: all .5s;  
+    transform: translateY(50px); opacity: 0.5;*/}
+/* img.iphone.is-inview {transform: translateY(0); opacity: 1;} */
+
+.c-scrollbar_thumb {background-color: var(--orange);}
+
+footer p{background-color: black; color: white; margin-bottom: 25px;}
+
+ul.transition {display:flex;position: absolute; z-index:10; height:100vh; 
+    width:100%; top:0; left:0; margin:0; padding:0; pointer-events:none}
+ul.transition li {transform: scaleY(0); background:var(--orange); width:33.3%;list-style-type: none; }
+
+img.side{width:auto; height: auto;padding-left:25px}
+.iphone-side{text-align: right;}
