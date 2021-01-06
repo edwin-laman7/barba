@@ -1,5 +1,5 @@
 Splitting({ by: "words"});
-
+gsap.registerPlugin(ScrollTrigger);
 
 // // //init locomotive
 let scroll = new LocomotiveScroll({
@@ -10,6 +10,17 @@ let scroll = new LocomotiveScroll({
     //offset:["1000",0]
 });
 
+scroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+    scrollTop(value) {
+      return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+      pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+});
 // barba.hooks.after(() => {
 //     scroll.init();
 //   });

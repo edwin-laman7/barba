@@ -30,7 +30,7 @@
     </div>
     <div data-scroll>
         <h1 data-scroll data-scroll-speed="">5G</h1>
-        <p data-scroll data-scroll-speed="">OMGGGGGGGGGG</p>
+        <h2 data-scroll data-scroll-speed="">OMGGGGGGGGGG</h2>
     </div>  
 </section>
 <section class="flex">

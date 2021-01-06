@@ -14,3 +14,13 @@ Steps to Integrate Barba-Locomotive
 1. Initiate Locomotive.
 2. In barba, use scroll.update() as after() is loaded.
 3. Set timeout, because it loads slower. Use 200ms
+
+Steps to Integrate Locomotive and GSAP ScrollTrigger
+1. Initiate & Register registerPlugin
+''''
+gsap.registerPlugin(ScrollTrigger);
+''''
+2. Match the query selector LocomotiveScroll to ScrollTrigger
+
+
+3. 
