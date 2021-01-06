@@ -21,18 +21,6 @@ ScrollTrigger.scrollerProxy("[data-scroll-container]", {
       },
       pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
 });
-// barba.hooks.after(() => {
-//     scroll.init();
-//   });
-
-//https://barba.js.org/docs/advanced/third-party/
-
-// barba.hooks.after(() => {
-//     scroll.update();
-//   });
-//lets start barba
-
-
 
 barba.init({
     debug:true,
@@ -124,3 +112,6 @@ function iPhoneIn(){
     tl.from('header ul li',{y:-200, duration:.4, stagger:0.1},"-=1.5");
     //tl.to('h1 .word',{duration:0.2,x:1000,stagger:0.2,ease:"sine.inOut"},"+=3");
 }
+
+ScrollTrigger.addEventListener("refresh", () => scroll.update());
+ScrollTrigger.refresh();

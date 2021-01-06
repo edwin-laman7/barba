@@ -21,6 +21,22 @@ Steps to Integrate Locomotive and GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 ````
 2. Match the query selector LocomotiveScroll to ScrollTrigger
+````
+ScrollTrigger.scrollerProxy("THIS-SELECTOR", {
+    scrollTop(value) {
+      return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+      pinType: document.querySelector("THIS-SELECTOR").style.transform ? "transform" : "fixed"
+});
+````
 
+3. At the end of Doc, add the following
+````
+ScrollTrigger.addEventListener("refresh", () => scroll.update());
+ScrollTrigger.refresh();
+````
 
-3. 
+Code Pen https://codepen.io/GreenSock/pen/1dc38ca14811bc76e25c4b8c686b653d?editors=1010
