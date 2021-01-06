@@ -27,7 +27,7 @@
             <img data-scroll data-scroll-speed="3" class="side" src="/images/iphone-blue-side.png" alt="">
         </div>
     </div>
-    <div data-scroll data-scroll-sticky data-scroll-target=".iphone-side">
+    <div data-scroll>
         <h1 data-scroll data-scroll-speed="">5G</h1>
         <p data-scroll data-scroll-speed="">OMGGGGGGGGGG</p>
     </div>  
