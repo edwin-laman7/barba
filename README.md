@@ -12,5 +12,5 @@ Issues
 
 Steps to Integrate Barba-Locomotive
 1. Initiate Locomotive.
-2. In barba, use scroll.update() as after is loaded.
+2. In barba, use scroll.update() as after() is loaded.
 3. Set timeout, because it loads slower. Use 200ms

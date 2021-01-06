@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<header data-scroll data-scroll>
+<header>
     <ul>
         <li><a href="index.php" class="active">iPhone 12 Mini</a></li>
         <li><a href="2.php">iPhone 12</a></li>
