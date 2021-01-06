@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<h1>TESTINGGG</h1>
 <header data-scroll data-scroll>
     <ul>
         <li><a href="index.php" class="active">iPhone 12 Mini</a></li>
