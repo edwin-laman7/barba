@@ -29,7 +29,7 @@
     </div>
     <div data-scroll data-scroll-sticky data-scroll-target=".iphone-side">
         <h1 data-scroll data-scroll-speed="">5G</h1>
-        <p data-scroll data-scroll-speed="">lets hope for the best year</p>
+        <p data-scroll data-scroll-speed="">OMGGGGGGGGGG</p>
     </div>  
 </section>
 <section class="flex">
