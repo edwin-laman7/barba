@@ -25,6 +25,7 @@
             <img data-scroll data-scroll-speed="9" class="side" src="/images/iphone-red-side.png" alt="">
             <img data-scroll data-scroll-speed="6" class="side" src="/images/iphone-green-side.png" alt="">
             <img data-scroll data-scroll-speed="3" class="side" src="/images/iphone-blue-side.png" alt="">
+            <img data-scroll data-scroll-speed="1" class="side" src="/images/iphone-white-side.png" alt="">
         </div>
     </div>
     <div data-scroll>
