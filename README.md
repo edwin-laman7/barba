@@ -17,9 +17,9 @@ Steps to Integrate Barba-Locomotive
 
 Steps to Integrate Locomotive and GSAP ScrollTrigger
 1. Initiate & Register registerPlugin
-''''
+````
 gsap.registerPlugin(ScrollTrigger);
-''''
+````
 2. Match the query selector LocomotiveScroll to ScrollTrigger
 
 
