@@ -40,7 +40,7 @@
         <p data-scroll data-scroll-speed="2">lets hope for the best year</p>
     </div>
     <div data-scroll data-scroll-speed="8">
-        <img src="20212.png" alt="">
+        Nothing here
     </div> 
 </section>
             
