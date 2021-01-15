@@ -9534,7 +9534,7 @@
                 },
                 intialFillOpacity: {
                     type: Number,
-                    default: 0
+                    default: 0.1
                 },
                 initialDistanceType: {
                     type: String,
@@ -22911,7 +22911,7 @@
                 },
                 intialFillOpacity: {
                     type: Number,
-                    default: .15
+                    default: .30
                 },
                 initialMeasurement: {
                     type: String,
