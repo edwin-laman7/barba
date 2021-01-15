@@ -43,7 +43,7 @@
     <meta name="theme-color" content="#ffffff">
     <script src="app.js" defer></script>
 
-    <link href="/css/kmfromhome.css?id=df1e829bb90dd5036394 " rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162074229-1"></script>
     <script>
