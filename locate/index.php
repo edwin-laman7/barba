@@ -41,8 +41,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" defer></script>
-    <script src="leaflet-provider.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" ></script>
+    <script src="leaflet-provider.js" ></script>
     <script>
         L.tileLayer.provider('Stadia').addTo(map);
     </script>
