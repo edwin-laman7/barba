@@ -1822,5 +1822,5 @@ input[type=number] {
     }
 }
 
-.flex {display: inline-flex;}
-.flex div {max-width: 50%;}
+/* .flex {display: inline-flex;}
+.flex div {max-width: 50%;} */
