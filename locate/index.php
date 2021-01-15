@@ -72,28 +72,8 @@
     <nav class="mt-4 mb-2 mx-4 sm:mx-auto flex items-end sm:items-center justify-between">
         
         <div>
-            <div class="sm:hidden" v-on:click="open = !open">
-                <svg class="fill-current h-4 w-4 stroke-current text-blue-900 mx-auto" 
-                    viewBox="0 0 20 20" 
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-                </svg>
-                
-                <span class="text-xs font-display">menu</span>
-            </div>
 
-            <ul class="hidden sm:flex sm:flex-row font-display text-indigo-900 font-bold"> 
-                <li class="pr-3 hover:text-indigo-600">
-                    <a href="https://2kmfromhome.com/about">About</a>
-                </li>
-                <li class="pr-3 hover:text-indigo-600">
-                    <a  href="https://2kmfromhome.com/help">Help</a>
-                </li>
-                <li class="pr-3 hover:text-indigo-600">
-                    <a href="https://2kmfromhome.com/contact">Contact</a>
-                </li>
-            </ul>
+
 
             <transition name="slide">
                 <div
