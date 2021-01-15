@@ -63,6 +63,86 @@
             <div>Made by Laman7</div>
         </div>
     </header>
+    <div id="app" class="flex flex-col justify-start min-h-screen min-w-full" ref="app">
+        <header ref="header">
+    <div class="container mx-auto">        
+<menu-main
+    inline-template
+    >
+    <nav class="mt-4 mb-2 mx-4 sm:mx-auto flex items-end sm:items-center justify-between">
+        
+        <div>
+            <div class="sm:hidden" v-on:click="open = !open">
+                <svg class="fill-current h-4 w-4 stroke-current text-blue-900 mx-auto" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+                
+                <span class="text-xs font-display">menu</span>
+            </div>
+
+            <ul class="hidden sm:flex sm:flex-row font-display text-indigo-900 font-bold"> 
+                <li class="pr-3 hover:text-indigo-600">
+                    <a href="https://2kmfromhome.com/about">About</a>
+                </li>
+                <li class="pr-3 hover:text-indigo-600">
+                    <a  href="https://2kmfromhome.com/help">Help</a>
+                </li>
+                <li class="pr-3 hover:text-indigo-600">
+                    <a href="https://2kmfromhome.com/contact">Contact</a>
+                </li>
+            </ul>
+
+            <transition name="slide">
+                <div
+                    v-if="open"
+                    class="fixed w-full h-full top-0 left-0 bg-gray-100 bg-opacity-75 z-10000"
+                    v-cloak
+                >
+                    <div
+                        class="absolute right-0 top-0 w-48 py-5 px-3 h-full bg-blue-800 text-white"               
+                    >
+                        <div class="flex justify-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                version="1.1" 
+                                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                xmlns:svgjs="http://svgjs.com/svgjs" 
+                                viewBox="0 0 140 140" 
+                                class="w-6 h-6 mr-2 stroke-current text-white"
+                                v-on:click="open = false"
+                                >
+                                <g transform="matrix(5.833333333333333,0,0,5.833333333333333,0,0)">
+                                    <path d="M0.748 12.000 A11.250 11.250 0 1 0 23.248 12.000 A11.250 11.250 0 1 0 0.748 12.000 Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                    <path d="M7.498 16.5L16.497 7.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                    <path d="M16.498 16.5L7.497 7.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <ul class="flex flex-col mt-5 w-full font-display font-bold">
+                            <li class="border-b border-blue-400 my-1 p-3">
+                                <a href="https://2kmfromhome.com/about">About</a>
+                            </li>
+                            <li class="border-b border-blue-400 my-1 p-3">
+                                <a  href="https://2kmfromhome.com/help">Help</a>
+                            </li>
+                            <li class="border-b border-blue-400 my-1 p-3">
+                                <a href="https://2kmfromhome.com/contact">Contact</a>
+                            </li>                         
+                        </ul>
+
+                        <div class="text-center mt-5 text-xs text-white font-display">
+                            <a href="https://www.buymeacoffee.com/devhaus" target="_blank" class="underline mr-2">Buy us a coffee</a>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </nav>
+</menu-main>    </div>  
+</header>
 
            <div class="mb-auto">
             
