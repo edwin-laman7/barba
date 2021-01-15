@@ -22,9 +22,9 @@
     <meta itemprop="description" content="How far can you exercise from home during the Government restrictions?" />
     <meta name="twitter:description" content="How far can you exercise from home during the Government restrictions?" />
 
-    <meta name="twitter:image" content="https://2kmfromhome.com/images/share-image.jpg" />
-    <meta itemprop="image" content="https://2kmfromhome.com/images/share-image.jpg"/>
-    <meta property="og:image" content="https://2kmfromhome.com/images/share-image.jpg" />    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <meta name="twitter:image" content="xxx here" />
+    <meta itemprop="image" content="xxx here"/>
+    <meta property="og:image" content="xxx here" />    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -41,7 +41,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="http://unpkg.com/leaflet@1.3.1/dist/leaflet.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" defer></script>
     <script>
         var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20,
@@ -76,7 +76,7 @@
 <menu-main
     inline-template
     >
-    <nav class="mt-4 mb-2 mx-4 sm:mx-auto flex items-end sm:items-center justify-between">
+    <nav class="">
         
         <div>
 
