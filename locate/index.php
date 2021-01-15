@@ -65,7 +65,9 @@
 <body>
     <header>
         <div class="flex">
-            <div><h1>Duduk Diam</h1></div>
+            <div><h1>Duduk Diam</h1>
+                <p>10km dari rumah sahaja.</p>    
+        </div>
             <div>Made by Laman7</div>
         </div>
     </header>
