@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 
-    <title>10KM from home</title>
+    <title>Duduk Diam</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>    
     <meta http-equiv="content-language" content="en-ie">
 
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://2kmfromhome.com" />
+    <meta property="og:url" content="https://dudukdiam.com" />
     <link href="https://2kmfromhome.com" rel="canonical" />
     <meta property="og:title" content="10KM From Home" />
     <meta property="og:description" content="How far can you exercise from home during the Government restrictions?" />
@@ -57,6 +57,12 @@
 
 </head>
 <body>
+    <header>
+        <div class="flex">
+            <div><h1>Duduk Diam</h1></div>
+            <div>Made by Laman7</div>
+        </div>
+    </header>
     <div id="app" class="flex flex-col justify-start min-h-screen min-w-full" ref="app">
         <header ref="header">
     <div class="container mx-auto">        
