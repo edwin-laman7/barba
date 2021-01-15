@@ -9522,8 +9522,8 @@
                     map: null,
                     initial: !0,
                     radius: 0,
-                    width: "100%",
-                    height: "100%",
+                    width: "700px",
+                    height: "842px",
                     markers: []
                 }
             },
@@ -9632,8 +9632,8 @@
                         this.height = e + "px";
                         break;
                     default:
-                        this.width = "100%",
-                        this.height = "100%"
+                        this.width = "700px",
+                        this.height = "842px"
                     }
                 },
                 getLocation: function() {
