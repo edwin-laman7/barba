@@ -184,10 +184,7 @@
                         :lon="lon"
                         :radius="radius"
                     ></share-location>
-                    <search-location
-                        class="mr-2 sm:mr-5"
-                        v-on:change-search="searchUpdate"
-                    ></search-location>
+
                     <radius-distance
                         :radius="radius"
                         v-on:radius-updated="updateRadius"
@@ -196,7 +193,7 @@
 
                     <div>
                         <div class="h-8 flex items-center">
-                            <a href="https://2kmfromhome.com/10km/print" 
+                            <a href="https://barba.laman7.com/10km/print" 
                                 target="_blank" 
                                 class="flex items-center justify-center w-full h-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
