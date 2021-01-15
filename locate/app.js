@@ -9626,15 +9626,17 @@
                 setWidthHeight: function() {
                     var t = document.documentElement.clientWidth
                       , e = document.documentElement.clientHeight;
-                    switch (!0) {
-                    case t < 699:
-                        this.width = t + "px",
-                        this.height = e + "px";
-                        break;
-                    default:
-                        this.width = "700px",
-                        this.height = "842px"
-                    }
+                    this.width = t + "px";
+                    this.height = e + "px";
+                    // switch (!0) {
+                    // case t < 699:
+                    //     this.width = t + "px",
+                    //     this.height = e + "px";
+                    //     break;
+                    // default:
+                    //     this.width = "700px",
+                    //     this.height = "842px"
+                    // }
                 },
                 getLocation: function() {
                     var t = this;
