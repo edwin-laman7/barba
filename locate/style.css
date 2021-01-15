@@ -1821,3 +1821,6 @@ input[type=number] {
         width: 75%
     }
 }
+
+.flex {display: inline-flex;}
+.flex div {max-width: 50%;}
