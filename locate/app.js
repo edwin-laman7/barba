@@ -9522,8 +9522,8 @@
                     map: null,
                     initial: !0,
                     radius: 0,
-                    width: "700px",
-                    height: "842px",
+                    width: "1920px",
+                    height: "900px",
                     markers: []
                 }
             },
