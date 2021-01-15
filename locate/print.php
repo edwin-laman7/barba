@@ -42,7 +42,7 @@
     <meta name="theme-color" content="#ffffff">
     <script src="app.js" defer></script>
 
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
