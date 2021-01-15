@@ -43,6 +43,7 @@
     <script src="app.js" defer></script>
 
     <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
@@ -55,7 +56,7 @@
         inline-template
     >
         <div class="w-full h-full">
-            <div id="map" style="width: 100wh, height: 100vh"></div> 
+            <div id="map" :style="{width: getWidth, height: getHeight }"></div> 
         </div>
     
     </print-view>    
