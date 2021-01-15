@@ -2555,7 +2555,7 @@
                     this.initial = !1,
                     this.map = L.map("map").setView([this.lat, this.lon], this.zoom()),
                     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(this.map);
                     this.addMarker(this.lat, this.lon),
                     this.sharedLocation()
