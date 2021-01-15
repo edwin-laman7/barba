@@ -44,7 +44,7 @@
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" ></script>
     <script src="leaflet-provider.js" ></script>
     <script>
-        L.tileLayer.provider('Stadia').addTo(map);
+        L.tileLayer.provider('Stadia.AlidadeSmoothDark').addTo(map);
     </script>
     <script src="app.js" defer></script>
 
