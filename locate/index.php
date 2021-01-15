@@ -230,9 +230,9 @@
     </map-view>    
         </div>
         
-<!-- <footer class="py-3 bg-blue-600" ref="footer">
+<footer class="py-3 bg-blue-600" ref="footer">
     <div class="container mx-auto">
-        <div class="flex items-center justify-center mt-2 font-display">
+        <!-- <div class="flex items-center justify-center mt-2 font-display">
             <span class="mx-auto text-xs text-white">
                 Created by <a class="underline" href="https://twitter.com/davebolger" target="_blank">Dave Bolger</a>
                 in <a class="underline" href="https://devhaus.ie" target="_blank">Devhaus</a>
@@ -243,9 +243,9 @@
         </div>
         <div class="text-center mt-2 text-xs text-white font-display">
             <a href="https://www.buymeacoffee.com/devhaus" target="_blank" class="mr-2">Buy us a coffee</a>
-        </div>
+        </div> -->
     </div>
-</footer> -->
+</footer>
     </div>
 </body>
 </html>
