@@ -9632,8 +9632,8 @@
                         this.height = e + "px";
                         break;
                     default:
-                        this.width = "700px",
-                        this.height = "842px"
+                        this.width = "1920px",
+                        this.height = "900px"
                     }
                 },
                 getLocation: function() {
