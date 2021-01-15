@@ -121,21 +121,6 @@
                             </svg>
                         </div>
 
-                        <ul class="flex flex-col mt-5 w-full font-display font-bold">
-                            <li class="border-b border-blue-400 my-1 p-3">
-                                <a href="https://2kmfromhome.com/about">About</a>
-                            </li>
-                            <li class="border-b border-blue-400 my-1 p-3">
-                                <a  href="https://2kmfromhome.com/help">Help</a>
-                            </li>
-                            <li class="border-b border-blue-400 my-1 p-3">
-                                <a href="https://2kmfromhome.com/contact">Contact</a>
-                            </li>                         
-                        </ul>
-
-                        <div class="text-center mt-5 text-xs text-white font-display">
-                            <a href="https://www.buymeacoffee.com/devhaus" target="_blank" class="underline mr-2">Buy us a coffee</a>
-                        </div>
                     </div>
                 </div>
             </transition>
