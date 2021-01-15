@@ -55,7 +55,7 @@
         inline-template
     >
         <div class="w-full h-full">
-            <div id="map" :style="{width: 100wh, height: 100vh }"></div> 
+            <div id="map" :style="width: 100wh, height: 100vh"></div> 
         </div>
     
     </print-view>    
