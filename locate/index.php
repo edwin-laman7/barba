@@ -232,7 +232,7 @@
     </map-view>    
         </div>
         
-        <footer class="py-3 bg-blue-600" ref="footer">
+<!-- <footer class="py-3 bg-blue-600" ref="footer">
     <div class="container mx-auto">
         <div class="flex items-center justify-center mt-2 font-display">
             <span class="mx-auto text-xs text-white">
@@ -247,7 +247,7 @@
             <a href="https://www.buymeacoffee.com/devhaus" target="_blank" class="mr-2">Buy us a coffee</a>
         </div>
     </div>
-</footer>
+</footer> -->
     </div>
 </body>
 </html>
