@@ -42,19 +42,19 @@
     <meta name="theme-color" content="#ffffff">
     <script src="app.js" defer></script>
 
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
 <body>
-    <div id="app" class="flex flex-col min-h-screen">
+    <div id="app" class="flex">
         
     <print-view
         initial-distance-type="km"
         :inital-radius=10000    
         inline-template
     >
-        <div class="w-full h-full min-h-screen min-w-screen">
+        <div class="w-full h-full">
             <div id="map" :style="{width: getWidth, height: getHeight }"></div> 
         </div>
     
