@@ -42,7 +42,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" ></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script src="leaflet-provider.js" ></script>
     <script>
         L.tileLayer.provider('Stadia.AlidadeSmoothDark').addTo(map);
