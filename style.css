@@ -14,7 +14,7 @@ header a.active {color:var(--blue)}
 header ul li {list-style: none;padding: 10px 25px;}
 
 section {min-height: 50vh; padding: 100px;}
-h1 {font-size: 200px;line-height: .75em;margin: .5em 0 0; color:var(--blue)}
+h1 {font-size: 150px;line-height: 1em;margin: .5em 0 0; color:var(--blue)}
 h1.no1.animate {}
 h2 {font-size: 60px}
 .flex {display:flex; align-content: center; justify-content: center; }

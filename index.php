@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <header>
     <ul>
-        <li><a href="index.php" class="active">iPhone 12 Mini</a></li>
-        <li><a href="2.php">iPhone 12</a></li>
+        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="2.php">Services</a></li>
         <li><a href="3.php">iPhone 12 Pro</a></li>
         <li><a href="4.php">iPhone 12 Max</a></li>
         <li><a href="2.php">Next</a></li>
@@ -13,11 +13,57 @@
         <img data-scroll class="iphone" src="/images/iphone.png" alt="">
     </div>
     <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
-        <h1 data-splitting>You Need More than a Website</h1>
+        <h1 data-splitting>You Need More than a Website.</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
-    
 </section>
+<section class="flex">
+    <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
+        <h1 data-splitting>You Need to "Wow" Audience.</h1>
+        <p class="intro">the New iPhone 12 mini</p>
+    </div>
+    <div class="center">
+        <img data-scroll class="iphone" src="/images/iphone.png" alt="">
+    </div>
+</section>
+<section class="flex">
+    <div class="center">
+        <img data-scroll class="iphone" src="/images/iphone.png" alt="">
+    </div>
+    <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
+        <h1 data-splitting>You Need to Turn Heads.</h1>
+        <p class="intro">the New iPhone 12 mini</p>
+    </div>
+</section>
+<section class="flex">
+    <div class="center">
+        <img data-scroll class="iphone" src="/images/iphone.png" alt="">
+    </div>
+    <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
+        <h1 data-splitting>You Need to be Remembered.</h1>
+        <p class="intro">the New iPhone 12 mini</p>
+    </div>
+</section>
+<section class="flex">
+    <div class="center">
+        <img data-scroll class="iphone" src="/images/iphone.png" alt="">
+    </div>
+    <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
+        <h1 data-splitting>You Need to be Heard.</h1>
+        <p class="intro">the New iPhone 12 mini</p>
+    </div>
+</section>
+<section class="flex">
+    <div class="center">
+        <img data-scroll class="iphone" src="/images/iphone.png" alt="">
+    </div>
+    <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
+        <h1 data-splitting>The Good News, We Can Help.</h1>
+        <p class="intro">the New iPhone 12 mini</p>
+    </div>
+</section>
+
+
 <section class="flex">
     <div data-scroll data-scroll-speed="">
         <div class="iphone-side">
