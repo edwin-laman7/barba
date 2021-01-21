@@ -1,16 +1,16 @@
 Splitting({ by: "words"});
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 // // //init locomotive
-let scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    lerp:0.08,
-    multiplier:1.1,
-    //offset:["1000",0]
-});
+// let scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true,
+//     lerp:0.08,
+//     multiplier:1.1,
+//     //offset:["1000",0]
+// });
 
-//scroll.on("scroll", ScrollTrigger.update);
+// scroll.on("scroll", ScrollTrigger.update);
 
 // ScrollTrigger.scrollerProxy("[data-scroll-container]", {
 //     scrollTop(value) {
@@ -106,8 +106,13 @@ function iPhoneIn(){
     var tl = gsap.timeline();
     Splitting({ by: "words"});
     tl.from('div.center img',{duration:1,y:400,ease:"sine.inOut"});
-    tl.from('h1 .word',{duration:0.5, delay:.7, opacity:0, rotateX:-80,stagger:0.2},"-=1.2");
-    tl.from('p.intro',{duration:0.5,opacity:0,y:10});
+    tl.from('h1.firsth .word',{duration:0.5, opacity:0, rotateX:-80,stagger:0.2},"-=1.2");
+    tl.to('h1.firsth .word',{duration:0.5, opacity:0, y:-10},"3");
+    tl.from('h1.complete .word',{duration:0.8, delay:3,opacity:0, rotateX:-80,stagger:0.2},"");
+    tl.to('h1.complete',{duration:1, scale:20,ease:"sine.inOut",y:-1500},"+=1.5");
+    tl.to('h1.complete',{opacity:0});
+    tl.to('body',{backgroundColor:"#fff"},"-=1");
+    tl.from('p.intro',{duration:0.5,opacity:0,y:10},"+=.5");
     tl.to('div.center img',{duration:2,rotate:-10, yoyo:true,yoyoEase: true},"-=1.2");
     tl.from('header ul li',{y:-200, duration:.4, stagger:0.1},"-=1.5");
     //tl.to('h1 .word',{duration:0.2,x:1000,stagger:0.2,ease:"sine.inOut"},"+=3");
