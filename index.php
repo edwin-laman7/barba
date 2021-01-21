@@ -13,7 +13,7 @@
         <img data-scroll class="iphone" src="/images/iphone.png" alt="">
     </div>
     <div class="iphone-text" data-scroll data-scroll-horizontal="" data-scroll-speed="0">
-        <h1 data-splitting>Faster than Fast.</h1>
+        <h1 data-splitting>You Need More than a Website</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
     
