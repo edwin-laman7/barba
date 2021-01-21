@@ -15,30 +15,30 @@
     </div>
 </section>
 <section class="flex">
-    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0">
+    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
         <h1 data-splitting>You Need to "Wow" Audience.</h1>
     </div>
 </section>
 <section class="flex">
-    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0">
+    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">
         <h1 data-splitting>To Turn Heads.</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
 </section>
 <section class="flex">
-    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0">
+    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
         <h1 data-splitting>To be Remembered.</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
 </section>
 <section class="flex">
-    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0">
+    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="10">
         <h1 data-splitting>To be Heard.</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
 </section>
 <section class="flex">
-    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0">
+    <div class="iphone-text" data-scroll data-scroll-direction="horizontal" data-scroll-speed="11">
         <h1 data-splitting>The Good News, We Can Help.</h1>
         <p class="intro">the New iPhone 12 mini</p>
     </div>
