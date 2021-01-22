@@ -107,17 +107,7 @@ function iPhoneIn(){
         duration:.5, opacity:0, rotateX:-80,stagger:0.08,
         ease: "none"
       });
-    tl.from('h2.third .word', {
-        scrollTrigger: {
-          trigger: ".second",
-          scroller: ".smooth-scroll",
-          scrub: true,
-          //start: "top bottom",
-          end: "top top"
-        },
-        duration:.5, opacity:0, rotateX:-80,stagger:0.08,
-        ease: "none"
-      });
+    
     
 }
 
