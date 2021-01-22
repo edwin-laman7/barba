@@ -1,21 +1,27 @@
 Splitting({ by: "words"});
-
-// let magicScroll = new MagicScroll({
-//     target: document.querySelector(".scroll-view.after"), // for body, no need to set target
-//     speed: 140,
-//     smooth: 24
-//   });
+gsap.registerPlugin(ScrollTrigger);
 
   // //init locomotive
 let scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector('.smooth-scroll'),
     smooth: true,
     lerp:0.08,
     multiplier:1.2,
     //offset:["1000",0]
 });
-  
-gsap.registerPlugin(ScrollTrigger);
+
+scroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".smooth-scroll", {
+    scrollTop(value) {
+      return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+      pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+});
+
 
 barba.init({
     debug:true,
@@ -79,15 +85,42 @@ function iPhoneIn(){
 
     tl.from('h1.hero1 .word',{duration:.5, opacity:0, rotateX:-80,stagger:0.2},"-=1.2");
     tl.to('h1.hero1 .word',{duration:3, opacity:0.9,},"2");
-    tl.from('h2.hero2 .word',{duration:0.5,opacity:0, rotateX:-80,stagger:0.2},"-=3");
+    tl.from('.hero2 .word',{duration:0.5,opacity:0,stagger:0.2,},"-=3");
+    //tl.add(tl.to('.hero2 .word',{duration:1.2,y:100, opacity:.1,ease:"sine.inOut", repeat:10,yoyo:true}));
 
-    tl.from('h2.second .word',{duration:.5, opacity:0, rotateX:-80,stagger:0.2},"-=1.2");
+    //tl.from('h2.second .word',{duration:.5, opacity:0, rotateX:-80,stagger:0.08},"-=1.2");
+    tl.to('h2.second .hblue',{color: "#3C78D8"});
 
-    tl.from('p.intro',{duration:0.5,opacity:0,y:10},"+=.5");
+    //tl.from('p.intro',{duration:0.5,opacity:0,y:10},"+=.5");
     tl.to('div.center img',{duration:2,rotate:-10, yoyo:true,yoyoEase: true},"-=1.2");
     tl.from('header ul li',{y:-200, duration:.4, stagger:0.1},"-=1.5");
     //tl.to('h1 .word',{duration:0.2,x:1000,stagger:0.2,ease:"sine.inOut"},"+=3");
+    
+    tl.from('h2.second .word', {
+        scrollTrigger: {
+          trigger: ".box",
+          scroller: ".smooth-scroll",
+          scrub: true,
+          //start: "top bottom",
+          end: "top top"
+        },
+        duration:.5, opacity:0, rotateX:-80,stagger:0.08,
+        ease: "none"
+      });
+    tl.from('h2.third .word', {
+        scrollTrigger: {
+          trigger: ".second",
+          scroller: ".smooth-scroll",
+          scrub: true,
+          //start: "top bottom",
+          end: "top top"
+        },
+        duration:.5, opacity:0, rotateX:-80,stagger:0.08,
+        ease: "none"
+      });
+    
 }
 
-// ScrollTrigger.addEventListener("refresh", () => scroll.update());
-// ScrollTrigger.refresh();
+
+ScrollTrigger.addEventListener("refresh", () => scroll.update());
+ScrollTrigger.refresh();
