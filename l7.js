@@ -128,7 +128,7 @@ function iPhoneIn(){
             start: "top center",
             end: "bottom top"
         },
-        scale:10,y:500,ease: "none", 
+        scale:20,y:500,ease: "none", 
     });
     
 }
@@ -139,3 +139,7 @@ ScrollTrigger.refresh();
 
 //jQuery Stuff
 // this works $('body').css('background','white');
+var path = document.querySelector('.path');
+var length = path.getTotalLength();
+
+console.log (length);

@@ -2,10 +2,11 @@
 
 :root {
     --blue:#3C78D8;
-
+    --pad50:120px;
+    --white:#fff;
 }
 body {background-color: #222222; font: normal 18px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden;}
-
+a {color:var(--white); text-decoration: none;}
 header {position: sticky;top:0; padding: 20px 100px;text-align: center;z-index: 3;}
 header ul{ display: flex;align-items: center; justify-content: center;padding: 0; margin: 0; width: 100%;}
 header a {color: #aaa; text-transform: uppercase; font-size: 12px; font-weight: bolder; text-decoration: none; transition: all .5s;}
@@ -41,6 +42,11 @@ img.iphone {width: 350px; height: auto;
 
 .c-scrollbar_thumb {background-color: var(--blue);}
 
+.intro-work {display: flex; margin-bottom:-10vh}
+.intro-work div {max-width:33%; padding: var(--pad50) ;}
+.intro-work div img {transform:skew(-10deg, -10deg) rotate(10deg); filter:grayscale(95%);transition:.25s all ease-out}
+.intro-work div img:hover {transform:skew(-10deg, -5deg) scale(1.1);  ;filter:grayscale(0%); }
+
 footer p{background-color: black; color: white; margin-bottom: 25px;}
 
 ul.transition {display:flex;position: absolute; z-index:10; height:100vh; 
@@ -49,6 +55,7 @@ ul.transition li {transform: scaleY(0); background:var(--blue); width:33.3%;list
 
 img.side{width:auto; height: 700px;padding-left:25px}
 .iphone-side{text-align: right;}
+
 
 .scroll-downs {
     margin: auto;
@@ -131,21 +138,26 @@ img.side{width:auto; height: 700px;padding-left:25px}
 .line:nth-child(6)::after {animation-delay: 2.9s;}
 .line:nth-child(7)::after {animation-delay: 3.2s;}
  
+@-webkit-keyframes drop{0%{top:-50%}100%{top:110%}}
+@keyframes drop{0%{top:-50%}100%{top:110%}}
 
-  @-webkit-keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
-  }
-  
-  @keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
-  }
+.svg-white {color:white; ; position: absolute; 
+     width: 600px; height: auto; top: 5%; left: -5%; animation: rotate 60s infinite;}
+
+.svg-white svg {
+    stroke-dasharray: 829; 
+    stroke-dashoffset: 4147;
+    animation: dash 20s infinite ; 
+    stroke: var(--blue); z-index: -1; transform: rotate(20deg)}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes dash {
+    0% {stroke-dashoffset: 0; opacity: .8;}
+    60% {opacity: .8;}
+    80% {opacity: 1;}
+    100% {stroke-dashoffset: 1800; opacity: .2;}
+    /* 100% {stroke-dashoffset: 1500; opacity: 0.5;} */
+}
