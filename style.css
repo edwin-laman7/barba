@@ -15,6 +15,7 @@ header ul li {list-style: none;padding: 10px 25px;}
 
 section {min-height: 50vh; padding: 100px;}
 h1 {font-size: 120px;line-height: 1em;margin: .5em 0 0; color:var(--blue); text-align: center;}
+h1.hero1 {font-size: 150px;}
 .white {color:#fff}
 
 h2 {font-size: 60px; font-weight: 400;}
@@ -47,3 +48,35 @@ ul.transition li {transform: scaleY(0); background:var(--blue); width:33.3%;list
 
 img.side{width:auto; height: 700px;padding-left:25px}
 .iphone-side{text-align: right;}
+
+.scroll-downs {
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #666;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 4px;
+    height: 12px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    90% { transform: translateY(15px); opacity: 0.3;}
+    100% { transform: translateY(0); opacity: 0; }
+  }
