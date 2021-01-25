@@ -128,7 +128,7 @@ function iPhoneIn(){
             start: "top center",
             end: "bottom top"
         },
-        scale:20,y:500,ease: "none", 
+        scale:10,y:500,ease: "none", 
     });
     
 }
