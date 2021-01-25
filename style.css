@@ -4,13 +4,25 @@
     font-family: Gilroy;
     src:url(assets/Gilroy-Regular.woff);
 }
+@font-face {
+    font-family: GilroyBold;
+    src:url(assets/Gilroy-Bold.woff);
+}
 
 :root {
     --blue:#3C78D8;
     --pad50:120px;
     --white:#fff;
 }
-body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden;}
+.white {color:#fff}
+.blue {color: var(--blue)}
+h1,h2,h3,h4 {}
+strong{font-family: "GilroyBold";}
+h1 {font-size: 5em;line-height: 1.3em;margin: .5em 0 0; color:var(--blue);font-weight: 600;font-family: "GilroyBold";}
+h2 {font-size: 2.5em; line-height: 1.3em}
+
+
+body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden; line-height: 1.6em;}
 a {color:var(--white); text-decoration: none;}
 header {position: sticky;top:0; padding: 20px 100px;text-align: center;z-index: 3;}
 header ul{ display: flex;align-items: center; justify-content: center;padding: 0; margin: 0; width: 100%;}
@@ -20,12 +32,9 @@ header a.active {color:var(--blue)}
 header ul li {list-style: none;padding: 10px 25px;}
 
 section {min-height: 50vh; padding: 100px;}
-h1 {font-size: 120px;line-height: 1em;margin: .5em 0 0; color:var(--blue); text-align: center;}
-h1.hero1 {font-size: 150px;}
-.white {color:#fff}
-.blue {color: var(--blue)}
 
-h2 {font-size: 60px; font-weight: 400;}
+
+
 .flex {display:flex; align-content: center; justify-content: center; }
 .flex div {align-items: center;padding:0 50px; max-width: 60%;}
 
@@ -36,7 +45,7 @@ h2 {font-size: 60px; font-weight: 400;}
 .intro {width: 70vw; margin: 0 auto;}
 .intro h1 {width: 70vw;text-align: center;}
 
-
+.text {width: 60vw; margin: auto;}
 
 .center {text-align: center;}
 img {width: 100%;}
