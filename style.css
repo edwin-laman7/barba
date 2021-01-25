@@ -17,6 +17,7 @@ section {min-height: 50vh; padding: 100px;}
 h1 {font-size: 120px;line-height: 1em;margin: .5em 0 0; color:var(--blue); text-align: center;}
 h1.hero1 {font-size: 150px;}
 .white {color:#fff}
+.blue {color: var(--blue)}
 
 h2 {font-size: 60px; font-weight: 400;}
 .flex {display:flex; align-content: center; justify-content: center; }
@@ -79,4 +80,72 @@ img.side{width:auto; height: 700px;padding-left:25px}
     10% { transform: translateY(0); opacity: 1; }
     90% { transform: translateY(15px); opacity: 0.3;}
     100% { transform: translateY(0); opacity: 0; }
+  }
+
+  .lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    margin: auto;
+    width: 90vw;
+  }
+  
+  .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(92, 92, 92, 0.1);
+    overflow: hidden;
+  }
+  .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,var(--blue) 75%, var(--blue) 100%);
+    -webkit-animation: drop 7s 0s infinite;
+            animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+
+.line:nth-child(1){margin-left:-25%}
+.line:nth-child(4){margin-left:-40%}
+.line:nth-child(6){margin-left:-50%}
+.line:nth-child(3){margin-left:25%}
+.line:nth-child(5){margin-left:40%}
+.line:nth-child(7){margin-left:50%}
+.line:nth-child(1)::after {animation-delay: 2s;}
+.line:nth-child(3)::after {animation-delay: 3.5s;}
+.line:nth-child(4)::after {animation-delay: 1.5s;}
+.line:nth-child(5)::after {animation-delay: 2.3s;}
+.line:nth-child(6)::after {animation-delay: 2.9s;}
+.line:nth-child(7)::after {animation-delay: 3.2s;}
+ 
+
+  @-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
   }

@@ -11,7 +11,7 @@
     </head>
 <body data-barba="wrapper">
     <div class="smooth-scroll ip12">
-        <main data-barba="container">
+        <main data-barba="container" data-barba-namespace="blog">
             <!-- page content -->
             <ul class="transition">
                 <li></li>
@@ -29,24 +29,45 @@
             </header>
             <section class="">
                 <div class="intro" >
-                    <h1 data-splitting class="hero1" data-scroll data-scroll-speed="3">Need a Miracle<br><span class="white">Website</span>? </h1>
-                    <p style="text-align: center;" data-splitting class="hero2 white" data-scroll data-scroll-speed="7">(Scroll down)</p>
+                    <h1 data-split class="hero1" data-scroll data-scroll-speed="3">Need a Miracle<br><span class="white">Website?</span></h1>
+                    <div class="scroll-downs" data-scroll data-scroll-speed="7">
+                        <div class="mousey">
+                          <div class="scroller"></div>
+                        </div>
+                      </div>
+                    <!-- <p style="text-align: center;" data-split class="hero2 white" data-scroll data-scroll-speed="7">
+                    </p> -->
             
                 </div>
             </section>
             <section class="box">
                 <div class="intro">
-                    <h2 class="second" data-splitting>The truth is, you don't need a website. You need to amaze visitors. To capture attention. To be remembered. To be heard. <span class="hblue">You need a miracle.</span>
+                    <h2 class="second" data-split>The truth is, you don't need a normal website. You need to wow audience. Capture their attention and be remembered.<br> <span class="hblue">You need a miracle.</span>
 
-                    <br><br>Miracle = Creative + Strategy.
+                    <!-- <br><br><span class="miracle"></span> -->
                     </h2>
-                    <h2 class="third" data-splitting></h2>
+                    
                 </div>
             </section>
 
             <section>
+                <div class="intro">
+                    <h2 class="third" data-split="chars"><span class="blue">Miracle</span> = Creative + Strategy.</h2>
+                </div>
+            </section>
+            <section>
                 <div>
-                    empty now
+                    
+                </div>
+            </section>
+            <section>
+                <div>
+                    
+                </div>
+            </section>
+            <section>
+                <div>
+                    
                 </div>
             </section>
 
@@ -71,7 +92,9 @@
 <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.js"></script>
 
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.4.0.1"></script>
-<script src="https://unpkg.com/magic-scroll.js/dist/MagicScroll.umd.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- <script src="https://unpkg.com/magic-scroll.js/dist/MagicScroll.umd.js"></script> -->
+
 <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
 

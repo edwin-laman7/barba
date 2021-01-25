@@ -1,11 +1,11 @@
-Splitting({ by: "words"});
+Splitting({ target: "[data-split]", by: "words"});
 gsap.registerPlugin(ScrollTrigger);
 
   // //init locomotive
 let scroll = new LocomotiveScroll({
     el: document.querySelector('.smooth-scroll'),
     smooth: true,
-    lerp:0.08,
+    lerp:0.1,
     multiplier:1.2,
     //offset:["1000",0]
 });
@@ -24,7 +24,7 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
 
 
 barba.init({
-    debug:true,
+    //debug:true,
     logLevel:'debug',
     views: [{
         namespace: 'home',
@@ -49,14 +49,14 @@ barba.init({
         },
         enter(data) {        
             iPhoneIn();
-            console.log('enter update');
+            //console.log('enter update');
         },
         after(data){
             setTimeout(function(){
                 scroll.update()
                 }, 200);
             
-            console.log('after update');
+            //console.log('after update');
         },
         once(data){
             iPhoneIn();
@@ -94,6 +94,7 @@ function iPhoneIn(){
     //tl.from('p.intro',{duration:0.5,opacity:0,y:10},"+=.5");
     tl.to('div.center img',{duration:2,rotate:-10, yoyo:true,yoyoEase: true},"-=1.2");
     tl.from('header ul li',{y:-200, duration:.4, stagger:0.1},"-=1.5");
+    
     //tl.to('h1 .word',{duration:0.2,x:1000,stagger:0.2,ease:"sine.inOut"},"+=3");
     
     tl.from('h2.second .word', {
@@ -101,16 +102,40 @@ function iPhoneIn(){
           trigger: ".box",
           scroller: ".smooth-scroll",
           scrub: true,
-          //start: "top bottom",
+          start: "top center",
           end: "top top"
         },
         duration:.5, opacity:0, rotateX:-80,stagger:0.08,
         ease: "none"
       });
     
+    tl.from('h2.third .word',{
+        scrollTrigger: {
+            trigger: "h2.second",
+            scroller: ".smooth-scroll",
+            scrub: true,
+            start: "top bottom",
+            end: "bottom center"
+        },
+        opacity:0, rotateX:-90, stagger:0.1
+    });
+
+    tl.to('h2.third',{
+        scrollTrigger: {
+            trigger: "h2.third",
+            scroller: ".smooth-scroll",
+            scrub: true,
+            start: "top center",
+            end: "bottom top"
+        },
+        scale:10,y:500,ease: "none", 
+    });
     
 }
 
 
 ScrollTrigger.addEventListener("refresh", () => scroll.update());
 ScrollTrigger.refresh();
+
+//jQuery Stuff
+// this works $('body').css('background','white');
