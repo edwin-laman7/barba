@@ -16,10 +16,11 @@
 }
 .white {color:#fff}
 .blue {color: var(--blue)}
-h1,h2,h3,h4 {}
+h1,h2,h3,h4 {line-height: 1.3em}
 strong{font-family: "GilroyBold";}
-h1 {font-size: 5em;line-height: 1.3em;margin: .5em 0 0; color:var(--blue);font-weight: 600;font-family: "GilroyBold";}
-h2 {font-size: 2.5em; line-height: 1.3em}
+h1 {font-size: 5em;margin: .5em 0 0; color:var(--blue);font-weight: 600;font-family: "GilroyBold";}
+h2 {font-size: 2.5em;}
+h2 {font-size: 1.9em;}
 
 
 body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden; line-height: 1.6em;}
@@ -60,8 +61,8 @@ img.iphone {width: 350px; height: auto;
 .intro-work div {max-width:33%; padding: var(--pad50) ;}
 .intro-work div img {transform:skew(-10deg, -10deg) rotate(10deg); filter:grayscale(95%);transition:.25s all ease-out}
 .intro-work div img:hover {transform:skew(-10deg, -5deg) scale(1.1);  ;filter:grayscale(0%); }
-
-footer p{background-color: black; color: white; margin-bottom: 25px;}
+.cta {font-family: "Gilroy"; font-size: 1.2em; padding: 25px 50px; background-color: var(--blue); border-radius: 50px; box-shadow: white 0px 0px 0px;}
+footer {background-color:var(--blue); color: var(--white); padding: 50px;}
 
 ul.transition {display:flex;position: absolute; z-index:10; height:100vh; 
     width:100%; top:0; left:0; margin:0; padding:0; pointer-events:none}
@@ -152,8 +153,8 @@ img.side{width:auto; height: 700px;padding-left:25px}
 .line:nth-child(6)::after {animation-delay: 2.9s;}
 .line:nth-child(7)::after {animation-delay: 3.2s;}
  
-@-webkit-keyframes drop{0%{top:-50%}100%{top:110%}}
-@keyframes drop{0%{top:-50%}100%{top:110%}}
+@-webkit-keyframes drop{0%{top:-50%}100%{top:100%}}
+@keyframes drop{0%{top:-50%}100%{top:100%}}
 
 .svg-white {color:white; ; position: absolute; 
      width: 600px; height: auto; top: 5%; left: -5%; animation: rotate 60s infinite;}
