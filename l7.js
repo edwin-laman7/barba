@@ -1,4 +1,25 @@
-Splitting({ target: "[data-split]", by: "words"});
+gsap.from("a.link-hover",{
+    y:500,
+    duration:1
+});
+
+$('a.link-hover').attr('data-split','chars');
+
+$("h1").hover(function(){
+   gsap.to(this,{x:50,stagger:0.1});
+    $(this).css("color", "yellow");
+    }, function(){
+    $(this).css("color", "white");
+  });
+
+function linkHover () {
+    var tl = gsap.timeline();
+    tl.to(this,{y:-10,stagger:0.1});
+}
+
+//Happens after the page is rendered
+
+Splitting({ target: "[data-split]"});
 gsap.registerPlugin(ScrollTrigger);
 
   // //init locomotive
@@ -81,7 +102,7 @@ function iPhoneOut(){
 function iPhoneIn(){
     var tl = gsap.timeline();
     Splitting({ by: "words"});
-    tl.from('div.center img',{duration:1,y:400,ease:"sine.inOut"});
+    //tl.from('div.center img',{duration:1,y:400,ease:"sine.inOut"});
 
     tl.from('h1.hero1 .word',{duration:.5, opacity:0, rotateX:-80,stagger:0.2},"-=1.2");
     tl.to('h1.hero1 .word',{duration:3, opacity:0.9,},"2");
@@ -92,7 +113,7 @@ function iPhoneIn(){
     tl.to('h2.second .hblue',{color: "#3C78D8"});
 
     //tl.from('p.intro',{duration:0.5,opacity:0,y:10},"+=.5");
-    tl.to('div.center img',{duration:2,rotate:-10, yoyo:true,yoyoEase: true},"-=1.2");
+    //tl.to('div.center img',{duration:2,rotate:-10, yoyo:true,yoyoEase: true},"-=1.2");
     tl.from('header ul li',{y:-200, duration:.4, stagger:0.1},"-=1.5");
     
     //tl.to('h1 .word',{duration:0.2,x:1000,stagger:0.2,ease:"sine.inOut"},"+=3");
@@ -128,7 +149,7 @@ function iPhoneIn(){
             start: "top center",
             end: "bottom top"
         },
-        scale:10,y:500,ease: "none", 
+        scale:10,y:500,filter:"blur(3px)",ease: "none", color:"#000", 
     });
     
 }
@@ -143,3 +164,9 @@ var path = document.querySelector('.path');
 var length = path.getTotalLength();
 
 console.log (length);
+
+//$("a.link-hover").attr("data-split");
+
+$(document).ready(function(){
+   
+});

@@ -21,7 +21,7 @@ strong{font-family: "GilroyBold";}
 h1 {font-size: 5em;margin: .5em 0 0; color:var(--blue);font-weight: 600;font-family: "GilroyBold";}
 h2 {font-size: 2.5em;}
 h2 {font-size: 1.9em;}
-
+a.link-hover {display:block; font-family:"GilroyBold"; cursor: pointer;}
 
 body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden; line-height: 1.6em;}
 a {color:var(--white); text-decoration: none;}
