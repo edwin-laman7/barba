@@ -1,7 +1,7 @@
 
 //Happens after the page is rendered
 
-Splitting({ target: "[data-split]", by: "chars"});
+
 gsap.registerPlugin(ScrollTrigger);
 
   // //init locomotive
@@ -25,20 +25,28 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
       pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
 });
 
+
+
 barba.init({
     //debug:true,
     logLevel:'debug',
-    // views: [{
-    //     namespace: 'home',
-    //     beforeEnter() {
-    //       // update the menu based on user navigation
-    //       Splitting({ by: "words"});
-    //     },
-    //     afterEnter() {
-    //       // refresh the parallax based on new page content
-    //       Splitting({ by: "words"});
-    //     }
-    //   }],
+    views: [{
+        namespace: 'home',
+        beforeEnter() {
+          // update the menu based on user navigation
+          //Splitting({ by: "words"});
+          
+        },
+        afterEnter() {
+          // refresh the parallax based on new page content
+          //Splitting({ by: "words"});
+          Splitting({ target: "[data-split]", by: "words"});
+          //MainPageIn();
+          setTimeout(function(){ //require to delay load
+           MainPageIn()
+            }, 1);
+        }
+      }],
     transitions: [{
         name: 'whatever',
         beforeLeave(){
@@ -50,7 +58,8 @@ barba.init({
             return gsap.to(data.current.container, {opacity: 0, duration:.4, delay:1});
         },
         enter(data) {        
-            PageIn();
+            //PageIn();
+            
             mouseStuff();
             //console.log('enter update');
         },
@@ -62,15 +71,11 @@ barba.init({
             //console.log('after update');
         },
         once(data){
-            PageIn();
+            //PageIn();
             mouseStuff();
         }
     }]
   });
-
-
-
-
 
 ScrollTrigger.addEventListener("refresh", () => scroll.update());
 ScrollTrigger.refresh();
