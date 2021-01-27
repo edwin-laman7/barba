@@ -21,9 +21,10 @@ strong{font-family: "GilroyBold";}
 h1 {font-size: 5em;margin: .5em 0 0; color:var(--blue);font-weight: 600;font-family: "GilroyBold";}
 h2 {font-size: 2.5em;}
 h2 {font-size: 1.9em;}
-a.link-hover {display:block; font-family:"GilroyBold"; cursor: pointer;}
+a.link-hover {display: inline-flex; font-family:"GilroyBold"; cursor: pointer;}
+/* a:hover {cursor: url(images/mouse.svg),auto ;} */
 
-body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden; line-height: 1.6em;}
+body {background-color: #222222; font: normal 24px "Gilroy"; color: #fff; margin: 0; padding: 0; overflow-x: hidden; line-height: 1.6em; cursor: ;}
 a {color:var(--white); text-decoration: none;}
 header {position: sticky;top:0; padding: 20px 100px;text-align: center;z-index: 3;}
 header ul{ display: flex;align-items: center; justify-content: center;padding: 0; margin: 0; width: 100%;}
@@ -33,8 +34,6 @@ header a.active {color:var(--blue)}
 header ul li {list-style: none;padding: 10px 25px;}
 
 section {min-height: 50vh; padding: 100px;}
-
-
 
 .flex {display:flex; align-content: center; justify-content: center; }
 .flex div {align-items: center;padding:0 50px; max-width: 60%;}
@@ -176,3 +175,31 @@ img.side{width:auto; height: 700px;padding-left:25px}
     100% {stroke-dashoffset: 1800; opacity: .2;}
     /* 100% {stroke-dashoffset: 1500; opacity: 0.5;} */
 }
+
+/* Mouse Effect */
+
+.ball {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid var(--blue);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .2s ease-out;
+  }
+.ball-on{width: 72px; height: 72px; background-color: var(--blue); opacity: .8;}
+.smallball {
+    width: 12px;
+    height: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--white);
+    z-index: -2;
+  }
+.transition-ball{
+    position: fixed; background-color: var(--blue); top:0;
+    width: 30px; height: 30px; border-radius: 50%; display: none;z-index: 100;}
